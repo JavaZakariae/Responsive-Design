@@ -1,0 +1,22 @@
+/*the position of the bellow selectors are very important*/
+h1{
+    background-color: cornflowerblue;
+}
+
+@media (max-width: 700px) {
+    h1{
+        color: darkblue;
+    }
+}
+@media (min-width: 997px) {
+    h1{
+        color: cyan;
+    }
+}
+@media (min-width: 1200px) {
+    h1{
+        background-color: coral;
+    }
+}
+
+
