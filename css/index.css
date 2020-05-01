@@ -60,6 +60,7 @@
     display: none;
 }
 
+
 /*Mobile */
 @media (max-width: 767px) {
     .header .overlay .plan{
@@ -70,6 +71,9 @@
     .visible-xs{
         display: block;
     }
+    .hidden-xs{
+        display: none;
+    }
 }
 /*Small Screen*/
 @media (min-width: 768px) {
@@ -79,6 +83,7 @@
     .visible-sm{
         display: block;
     }
+
 }
 /*Medium Screen*/
 @media (min-width: 992px) {
@@ -96,6 +101,9 @@
     }
     .visible-lg{
         display: block;
+    }
+    .hidden-lg{
+        display: none;
     }
 }
 
