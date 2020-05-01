@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.clear-fix{
+    clear: both;
+}
+
 .header{
     background: url("../images/headerback.jpg") no-repeat;
     min-height: 500px;
@@ -38,12 +42,23 @@
 .container{
     padding-left: 15px;
     padding-right: 15px;
-    /*background-color: coral;*/
     margin: auto;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
-
+.header .overlay .order{
+    border: 2px solid darkorange;
+    font-size: 24px;
+    margin-top: 15px;
+    margin-left: 1%;
+    margin-right: 5%;
+}
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg{
+    display: none;
+}
 
 /*Mobile */
 @media (max-width: 767px) {
@@ -52,11 +67,17 @@
         margin: 0 auto 20px;
         font-size: 20px;
     }
+    .visible-xs{
+        display: block;
+    }
 }
 /*Small Screen*/
 @media (min-width: 768px) {
     .container{
         width: 738px;
+    }
+    .visible-sm{
+        display: block;
     }
 }
 /*Medium Screen*/
@@ -64,11 +85,19 @@
     .container{
         width: 962px;
     }
+    .visible-md{
+        display: block;
+    }
 }
 /*Large Screen*/
 @media (min-width: 1200px) {
     .container{
         width: 1170px;
     }
+    .visible-lg{
+        display: block;
+    }
 }
+
+
 
