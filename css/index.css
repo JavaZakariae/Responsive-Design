@@ -16,7 +16,7 @@
 
 .header{
     background: url("../images/headerback.jpg") no-repeat;
-    min-height: 500px;
+    min-height: 300px;
     background-size: cover;
     position: relative;
 }
@@ -86,11 +86,29 @@
 .features .feat p{
  line-height: 1.3;
 }
-
-
 .h1{
     font-size:xx-large;
 }
+
+.about-us{
+    background-color: rgb(24, 27, 73);
+    color: white;
+}
+.about-us .h1{
+    background-color: coral;
+    width: 200px;
+    margin: auto;
+    border-radius: 5%;
+    border: 1px solid darkgoldenrod;
+    color: rgb(24, 27, 73);
+}
+.about-us .responsive{
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+
+
 
 /*Mobile */
 @media (max-width: 767px) {
@@ -107,6 +125,11 @@
     }
     .features .feat{
         width: 95%;
+    }
+    .about-us .responsive{
+        text-align: justify;
+        line-height: 1.4;
+        font-size: 16px;
     }
 }
 /*Small Screen*/
