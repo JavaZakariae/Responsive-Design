@@ -14,6 +14,13 @@
     float: left;
 }
 
+.unstiled-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
 .header{
     background: url("../images/headerback.jpg") no-repeat;
     min-height: 300px;
@@ -113,7 +120,32 @@
     margin-bottom: 25px;
     background-color: coral;
 }
+.price-ordering{
+    background-color: rgb(24, 27, 73);
+    color: white;
+    padding: 25px;
+}
+.price-ordering .h1{
+    font-size: 50px;
+    color: coral;
+    border-bottom: 1px solid coral;
+    width: 400px;
+    margin: 0 auto 25px;
+}
+.pricing-plan{
+    width: 33%;
+    border: 1px solid coral;
+    padding: 10px;
+}
+.pricing-plan h3{
+    font-weight: bold;
+    font-size: 24px;
+    color: coral;
+}
 
+.pricing-plan .unstiled-list{
+    line-height: 1.7;
+}
 
 /*Mobile */
 @media (max-width: 767px) {
@@ -139,8 +171,12 @@
     .responsive-image{
         float: left;
         width: 100%;
+        text-align: center;
     }
     .responsive-image img{
+        mask-size: 100px 100px ;
+    }
+    .pricing-plan{
         width: 100%;
     }
 }
