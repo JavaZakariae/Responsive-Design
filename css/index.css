@@ -93,6 +93,8 @@
 .about-us{
     background-color: rgb(24, 27, 73);
     color: white;
+    padding-bottom: 25px;
+    padding-top: 15px;
 }
 .about-us .h1{
     background-color: coral;
@@ -106,8 +108,11 @@
     line-height: 1.6;
     font-size: 18px;
 }
-
-
+.our-works h2{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: coral;
+}
 
 
 /*Mobile */
@@ -131,6 +136,13 @@
         line-height: 1.4;
         font-size: 16px;
     }
+    .responsive-image{
+        float: left;
+        width: 100%;
+    }
+    .responsive-image img{
+        width: 100%;
+    }
 }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px){
@@ -149,6 +161,13 @@
     .features .feat:nth-child(4){
         width: 49%;
     }
+    .responsive-image{
+        float: left;
+        width: 48%;
+    }
+    .responsive-image img{
+         width: 100%;
+     }
 }
 /*Medium Screen*/
 @media (min-width: 992px) {
@@ -158,6 +177,13 @@
     .visible-md{
         display: block;
     }
+    .responsive-image{
+        float: left;
+        width: 33%;
+    }
+    .responsive-image img{
+         width: 100%;
+     }
 }
 /*Large Screen*/
 @media (min-width: 1200px) {
@@ -170,6 +196,13 @@
     .hidden-lg{
         display: none;
     }
+    .responsive-image{
+        float: left;
+        width: 25%;
+    }
+    .responsive-image img{
+         width: 100%;
+     }
 }
 
 
