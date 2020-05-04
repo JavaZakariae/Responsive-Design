@@ -142,10 +142,20 @@
     font-size: 24px;
     color: coral;
 }
-
 .pricing-plan .unstiled-list{
     line-height: 1.7;
 }
+
+.testimonials{
+    padding-bottom: 25px;
+}
+
+.testimonials .person{
+    background-color: coral;
+    color: black;
+    padding: 1%;
+}
+
 
 /*Mobile */
 @media (max-width: 767px) {
@@ -204,6 +214,24 @@
     .responsive-image img{
          width: 100%;
      }
+    .testimonials .person{
+        border: 1px solid coral;
+    }
+    .testimonials .person:first-of-type{
+        float: left;
+        width: 50%;
+        background-color: cornflowerblue;
+        margin-left: 25%;
+        margin-bottom: 25px;
+    }
+    .testimonials .person:not(:first-of-type){
+        float: left;
+        width: 49%;
+        background-color: cornflowerblue;
+    }
+    .testimonials .person:last-of-type{
+        margin-left: 2%;
+    }
 }
 /*Medium Screen*/
 @media (min-width: 992px) {
