@@ -20,6 +20,12 @@
     list-style: none;
 }
 
+.image-circle{
+    border-radius: 50%;
+    border: 2px solid coral;
+}
+
+
 
 .header{
     background: url("../images/headerback.jpg") no-repeat;
@@ -151,10 +157,25 @@
 }
 
 .testimonials .person{
-    background-color: coral;
     color: black;
     padding: 1%;
 }
+
+.testimonials .avatar{
+    width: 20%;
+    margin-right: 5%;
+}
+
+.testimonials .details{
+    width: 75%;
+}
+
+.testimonials .avatar img{
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 /*Mobile */
