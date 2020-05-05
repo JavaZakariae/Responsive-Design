@@ -103,13 +103,14 @@
     font-size:xx-large;
 }
 
-.about-us{
+.about-us, .information{
     background-color: rgb(24, 27, 73);
     color: white;
     padding-bottom: 25px;
     padding-top: 15px;
 }
-.about-us .h1{
+.about-us .h1,
+.information .h1{
     background-color: coral;
     width: 200px;
     margin: auto;
@@ -176,7 +177,45 @@
 }
 
 
+.information{
+    padding: 50px;
+    height: 300px;
+}
+.information .h1{
+    width: 400px}
 
+.information .info-list {
+    margin-top: 25px;
+    padding-top: 30px;
+}
+.information .info-list li{
+    padding: 5px;
+    display: inline-block;
+    background-color: darkslateblue;
+    font-size: 20px;
+    cursor: pointer;
+}
+.information .info-list li.selected{
+    color: darkslateblue;
+    background-color: coral;
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.information .info-list li:hover{
+    background-color: coral;
+}
+
+.information .info-content{
+    /*background-color: whitesmoke;*/
+    color: black;
+    line-height: 1.5;
+    background-color: coral;
+}
+
+.information .info-content > div:not(:first-of-type){
+    display: none;
+}
 
 /*Mobile */
 @media (max-width: 767px) {
@@ -210,6 +249,14 @@
     .pricing-plan{
         width: 100%;
     }
+    .information{
+        height: 500px;
+    }
+    .information .info-list li{
+        display: block;
+
+    }
+
 }
 /*Small Screen*/
 @media (min-width: 768px) and (max-width: 991px){
